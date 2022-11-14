@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_test/constants.dart';
+import 'package:tiktok_test/views/screens/auth/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,21 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Tiktok test',
-      theme: ThemeData(
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: backgroundColor,
       ),
-      home: const MyHomePage(),
+      home: LoginScreen(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text("test"),
-    );
-  }
-}
