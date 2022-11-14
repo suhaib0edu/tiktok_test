@@ -42,8 +42,8 @@ class LoginScreen extends StatelessWidget {
                     height: 20,
                   ),
                   TextInputField(
-                    controller: emailController,
-                    icon: Icons.email,
+                    controller: passController,
+                    icon: Icons.password,
                     label: 'password',
                     obscureText: true,
                   ),
