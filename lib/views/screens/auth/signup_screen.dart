@@ -37,9 +37,10 @@ class SignupScreen extends StatelessWidget {
                 children: [
                   Stack(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         backgroundImage: NetworkImage(
-                            'https://ca.slack-edge.com/T03RL54N51D-U049K8GFPK9-aa8c45017486-48'),
+                            'https://static-00.iconduck.com/assets.00/male-avatar-illustration-256x256-05bnteok.png'
+                            ),
                         radius: 65,
                       ),
                       Positioned(
