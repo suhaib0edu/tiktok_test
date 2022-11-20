@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "679903724700",
+    "project_id": "test-app-70f8f",
+    "storage_bucket": "test-app-70f8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679903724700:android:cb670071da0d507b8c1959",
+        "android_client_info": {
+          "package_name": "com.example.tiktok_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679903724700-t0h8du3s7bumkhqmsd0bku6j3edv9hb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzpP82Z0p6MAFzXl9dQI2AOTD2_ssr99E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679903724700-t0h8du3s7bumkhqmsd0bku6j3edv9hb7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "679903724700-51oc1uikb2k3sobajtntnv703jajunvp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tiktokx"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679903724700:android:519ad1b76d460fed8c1959",
+        "android_client_info": {
+          "package_name": "com.example.tiktokx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679903724700-t0h8du3s7bumkhqmsd0bku6j3edv9hb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzpP82Z0p6MAFzXl9dQI2AOTD2_ssr99E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679903724700-t0h8du3s7bumkhqmsd0bku6j3edv9hb7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "679903724700-51oc1uikb2k3sobajtntnv703jajunvp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tiktokx"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
