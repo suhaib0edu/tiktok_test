@@ -15,3 +15,13 @@ var firestore = FirebaseFirestore.instance;
 
 //CONTROLER
 var authController = AuthController();
+
+//PAGES
+
+var pageScreen =[
+const Text('Home Screen'),
+const Text('Search Screen'),
+const Text('Add Screen'),
+const Text('Messeges Screen'),
+const Text('Profile Screen'),
+];

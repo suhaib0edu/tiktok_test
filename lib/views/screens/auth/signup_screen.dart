@@ -123,6 +123,7 @@ class SignupScreen extends StatelessWidget {
                       InkWell(
                           onTap: (() {
                             print('go To Login');
+                            authController.goToLogin();
                           }),
                           child: Text(
                             ' Login',

@@ -74,7 +74,7 @@ class LoginScreen extends StatelessWidget {
                       const Text('Don\'t have account ?',style: TextStyle(fontSize: 19,),),
                        InkWell(
                         onTap: (() {
-                          print('go To regester'); 
+                          authController.goToRegester(); 
                         }),
                         child: Text(' regester',style: TextStyle(fontSize: 19,color: buttonColor,),)),
                     ],
