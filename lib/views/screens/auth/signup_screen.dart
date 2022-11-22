@@ -5,9 +5,9 @@ import '../../widgets/text_input_field.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
-  final TextEditingController usernameController = TextEditingController();
-  final TextEditingController emailController = TextEditingController();
-  final TextEditingController passController = TextEditingController();
+  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +39,7 @@ class SignupScreen extends StatelessWidget {
                     children: [
                       const CircleAvatar(
                         backgroundImage: NetworkImage(
-                            'https://static-00.iconduck.com/assets.00/male-avatar-illustration-256x256-05bnteok.png'
-                            ),
+                            'https://static-00.iconduck.com/assets.00/male-avatar-illustration-256x256-05bnteok.png'),
                         radius: 65,
                       ),
                       Positioned(
@@ -52,6 +51,7 @@ class SignupScreen extends StatelessWidget {
                               icon: Icon(Icons.camera),
                               onPressed: () {
                                 print('pic');
+                                authController.picImage();
                               },
                             ),
                           )),
@@ -61,7 +61,7 @@ class SignupScreen extends StatelessWidget {
                     height: 20,
                   ),
                   TextInputField(
-                    controller: emailController,
+                    controller: _usernameController,
                     icon: Icons.person,
                     label: 'username',
                   ),
@@ -69,7 +69,7 @@ class SignupScreen extends StatelessWidget {
                     height: 20,
                   ),
                   TextInputField(
-                    controller: emailController,
+                    controller: _emailController,
                     icon: Icons.email,
                     label: 'email',
                   ),
@@ -77,7 +77,7 @@ class SignupScreen extends StatelessWidget {
                     height: 20,
                   ),
                   TextInputField(
-                    controller: passController,
+                    controller: _passController,
                     icon: Icons.email,
                     label: 'password',
                     obscureText: true,
@@ -86,9 +86,13 @@ class SignupScreen extends StatelessWidget {
                     height: 20,
                   ),
                   InkWell(
-                    onTap: (() {
-                      print('Regester done');
-                    }),
+                    onTap: (() => {
+                          authController.regesterUser(
+                              _usernameController.text,
+                              _emailController.text,
+                              _passController.text,
+                              authController.profilePhoto!)
+                        }),
                     child: Container(
                       height: 50,
                       width: double.infinity,
