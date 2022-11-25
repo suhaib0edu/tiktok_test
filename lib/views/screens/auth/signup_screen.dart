@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
-import '../../widgets/text_input_field.dart';
+import '../../widgets/widgets.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
